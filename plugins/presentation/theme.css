@@ -1,0 +1,85 @@
+a {
+	text-decoration: none;
+	color: #06f;
+}
+a:hover {
+	text-decoration: underline;
+}
+body {
+	margin: 0;
+	font-family: "DejaVu Sans", "文泉驿正黑", "微软雅黑";
+	background: #ECFDCE;
+}
+
+.reveal h1 {
+	font-size: 2em;
+	margin: 0.5em 0;
+}
+.reveal h2 {
+	font-size: 1.7em;
+	margin: 0.5em 0;
+}
+.reveal h3 {
+	font-size: 1.4em;
+	margin: 0.5em 0;
+}
+.reveal h4 {
+	font-size: 1.2em;
+	margin: 0.5em 0;
+}
+.reveal h5 {
+	font-size: 1.1em;
+	margin: 0.5em 0;
+}
+.reveal h6 {
+	font-size: 1.05em;
+	margin: 0.5em 0;
+}
+.reveal p {
+	margin: 0.5em 0;
+}
+.reveal blockquote, .reveal pre {
+	box-shadow: none;
+	width: auto;
+	margin: 1em 1.5em;
+	padding: 0 0.5em;
+	border-top: 1px dashed #06f;
+	border-bottom: 1px dashed #06f;
+	text-align: left;
+	font-style: normal;
+}
+.reveal pre {
+	font-size: 0.8em;
+	padding: 0.5em;
+}
+
+.reveal .progress span {
+	background: #06f;
+	opacity: 0.5;
+}
+.reveal .slide-number {
+	color: #06f;
+	opacity: 0.5;
+}
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+	border-right-color: #06f;
+}
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+	border-left-color: #06f;
+}
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+	border-bottom-color: #06f;
+}
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+	border-top-color: #06f;
+}
+.full-screen-button {
+	background: #06f;
+}
+.slide-sync {
+	color: #06f;
+}

@@ -1,0 +1,43 @@
+<tmpl id="loading" minify>
+	<div class="loading">
+		<div class="loadingBackImg"></div>
+	</div>
+</tmpl>
+
+<tmpl id="notFound" minify>
+	不好意思，没有文章了……
+</tmpl>
+
+<tmpl id="comment" minify>
+	<div class="comment_title"></div>
+	<div class="comment_list">加载中……</div>
+	<div class="comment_new">
+		<form>
+			<input type="hidden" name="post" value="{{postId}}">
+			<input type="hidden" name="responseTo">
+			{{#if userInfo._id}}
+				<label class="comment_new_title">{{userInfo.displayName}} 评论</label>
+			{{else}}
+				<label class="comment_new_title">写新评论</label>
+				<div><label>名字</label><input type="text" name="displayName" value="{{displayName}}"></div>
+				<div><label>邮箱</label><input type="email" name="email" value="{{email}}"></div>
+				<div><label>网址</label><input type="text" name="url" value="{{url}}"></div>
+			{{/if}}
+			<div class="comment_new_textarea"><textarea name="content"></textarea></div>
+			<div class="comment_error"></div>
+			<div class="comment_new_buttons">
+				<span class="comment_notify">
+					<input type="checkbox" name="acceptNotify" value="yes" checked id="comment_notify"> <label for="comment_notify">&nbsp;接收邮件提醒</label>
+				</span>
+				<input type="submit" class="submit" value="提交"> <input type="button" class="button comment_cancel" value="取消">
+			</div>
+		</form>
+	</div>
+</tmpl>
+
+<tmpl id="commentItem" minify>
+	<div class="comment_head"><a {{#if url}}href="{{url}}"{{/if}} class="comment_user">{{displayName}}</a> <span class="comment_time">{{dateTimeString}}</span></div>
+	<div class="comment_body">{{content}}</div>
+	{{#if depth}}<div class="comment_reply"><a href="javascript:void(0)">回复</a></div>{{/if}}
+	<div class="comment_response"></div>
+</tmpl>

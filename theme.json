@@ -1,0 +1,12 @@
+{
+	"title": "Programet",
+	"version": "0.3.3",
+	"author": "Programet",
+	"url": "http://programet.org",
+	"lightpalette": "~0.3.3",
+	"routes": {
+		"main": "main.js",
+		"style": "main.css",
+		"tmpl": "main.tmpl"
+	}
+}
