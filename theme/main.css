@@ -175,14 +175,15 @@ pre {
 }
 
 .post_body {
-	font-size: 1.1em;
+	letter-spacing: 0.1em;
 	padding: 0;
 	color: #303030;
+	overflow: hidden;
+	text-align: justify;
 }
 .post_content {
 	border-top: 1px dashed #C2FFA9;
 	padding-top: 0.5em;
-	font-size: 0.9em;
 }
 .post_extra {
 	border-bottom: 1px dashed #C2FFA9;
@@ -192,8 +193,12 @@ pre {
 	color: #06f;
 }
 .post_body p {
-	text-indent: 2em;
+	text-indent: 2.2em;
 	margin: 0.5em 0;
+}
+.post_body p img {
+	max-width: 90%;
+	height: auto;
 }
 .post_body ul, .post_body ol {
 	margin: 0.5em 0;

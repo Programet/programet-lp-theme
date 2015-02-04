@@ -11,7 +11,7 @@ lp.theme = function(pg){
 	});
 
 	pg.on('contentLoaded', function(){
-		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
 		// not found
 		var notFound = document.querySelector('.post_not_found');
 		if(notFound) notFound.innerHTML = tmpl.notFound();
